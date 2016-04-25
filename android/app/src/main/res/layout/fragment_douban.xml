@@ -1,0 +1,197 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="cn.jasonlv.siri.fragment.DoubanFragment"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="电影 电视 纪录片"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_title_textview"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_link_textview"
+                android:autoLink="web"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_rating_textview"
+                android:textColor="@android:color/white"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_genre_textview"
+                android:textColor="@android:color/white"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/book_layout"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="图书"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/book_title_textview"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/book_link_textview"
+                    android:autoLink="web"
+                    android:textColor="@android:color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/book_rating_textview"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/book_author_textview"
+                    android:textColor="@android:color/white"/>
+
+
+
+                </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/music_layout"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="音乐"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/music_headline"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/music_title_1"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/music_link_1"
+                    android:autoLink="web"
+                    android:textColor="@android:color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/music_rating_1"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/music_title_2"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/music_link_2"
+                    android:autoLink="web"
+                    android:textColor="@android:color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/music_rating_2"
+                    android:textColor="@android:color/white"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/music_title_3"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/music_link_3"
+                    android:autoLink="web"
+                    android:textColor="@android:color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/music_rating_3"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+</FrameLayout>

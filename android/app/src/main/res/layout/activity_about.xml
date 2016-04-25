@@ -1,0 +1,84 @@
+<com.skyfishjy.library.RippleBackground
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+
+    app:rb_color="#0099CC"
+    app:rb_radius="82dp"
+    app:rb_rippleAmount="6"
+    app:rb_duration="3000"
+    app:rb_scale="6">
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/centerImage"
+        android:src="@drawable/phone1"/>
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/foundDevice"
+        android:layout_above="@id/centerImage"
+        android:layout_marginBottom="32dp"
+        android:layout_toLeftOf="@id/centerImage"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/ic_drawer"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width = "80dp"
+        android:layout_height="30dp"
+        android:textColor="@android:color/white"
+        android:text="@string/author_name_1"
+        android:textSize="22dp"
+        android:layout_marginBottom="32dp"
+        android:layout_toLeftOf="@id/centerImage"
+        android:layout_marginRight="6dp"
+        android:layout_above="@id/centerImage"
+        android:visibility="invisible"
+        android:id="@+id/author_1"
+        />
+    <TextView
+        android:layout_width = "80dp"
+        android:layout_height="34dp"
+        android:textColor="@android:color/background_dark"
+        android:text="@string/author_name_2"
+        android:textSize="22dp"
+        android:layout_marginBottom="32dp"
+        android:layout_toRightOf="@id/centerImage"
+        android:layout_marginLeft="6dp"
+        android:layout_above="@id/centerImage"
+        android:visibility="invisible"
+        android:id="@+id/author_2"
+        />
+    <TextView
+        android:layout_width = "84dp"
+        android:layout_height = "34dp"
+        android:textColor="@android:color/holo_purple"
+        android:text="@string/author_name_3"
+        android:textSize="22dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@id/centerImage"
+        android:layout_marginRight="6dp"
+        android:visibility="invisible"
+        android:layout_below="@id/centerImage"
+        android:id="@+id/author_3"
+        />
+    <TextView
+        android:layout_width = "84dp"
+        android:layout_height="34dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/author_name_4"
+        android:textSize="22dp"
+        android:layout_marginBottom="62dp"
+        android:layout_toRightOf="@id/centerImage"
+        android:layout_marginRight="6dp"
+        android:visibility="invisible"
+        android:layout_above="@id/centerImage"
+        android:id="@+id/author_4"
+        />
+
+
+</com.skyfishjy.library.RippleBackground>

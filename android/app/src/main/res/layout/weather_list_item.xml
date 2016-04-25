@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textSize="23dp"
+            android:id="@+id/weather_date"
+            android:text="date"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/weather_weekday"
+            android:textSize="23dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Wed"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="最高: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/weather_high"
+            android:text="high: 34"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="          最低: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/weather_low"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="low: 23"/>
+
+        </LinearLayout>
+
+</LinearLayout>

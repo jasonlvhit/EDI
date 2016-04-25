@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.jasonlv.siri.fragment.TodoEditorFragment"
+    android:orientation="vertical"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="6dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_date"
+            android:id="@+id/set_date_editor"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_time"
+            android:id="@+id/set_time_editor"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            />
+        </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/todo_title_editor"
+        android:textColor="@android:color/white"
+        android:hint="@string/todo_editor_title_hint"/>
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:minLines="6"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/todo_editor_description"
+        android:textColor="@android:color/white"
+        android:hint="@string/todo_editor_description_hint"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_todo"
+        android:text="submit"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>Science VS. Romance|辣椒面儿</title>
+  <meta charset="utf-8" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/feed.xml">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://svsr.sinaapp.com/static/main/css/bootstrap.min.css" type="text/css" media="screen">
+<script type="text/javascript" src="http://svsr.sinaapp.com/static/main/js/jquery-1.7.1.min.js"></script>
+
+
+<link rel="stylesheet" href="http://svsr.sinaapp.com/static/main/css/style.css" type="text/css">
+
+<script>
+$(document).ready(function(){
+    $('.nav a').hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+
+    $('.justtitle a').hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+});
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+    );
+}
+</script>
+
+</head>
+<body>
+
+<div class="banner">
+<ul class="nav nav-pills">
+  <li><a href="http://jasonlv.cn">辣椒面儿</a></li>
+</ul>
+</div>
+<div class="container">
+
+<div class="main">
+
+<div class="content">
+	<ul class="archive">
+
+  
+  {% for i in items %}  
+  <li class="item">
+    <time datetime="{{ i.pub_time }}">{{ i.pub_time }}</time>
+    <a href="{{ url_for('post', post_id = i.id) }}">{{ i.title }}</a>
+  </li>
+
+  
+  
+  {% endfor %}
+
+</ul>
+
+</div>
+</div>
+</div>
+<div class="footer">
+<!--
+    Copyright GuoJing, Theme designed by GuoJing
+    Theme name Simple
+    If you love this theme, please keep my copyright and link to my blog.
+    If you DON'T LIKE it and you CAN remove the link. but not share spirit.
+    如果你喜欢这个博客构架和皮肤，请保留我作为原作者的权利，我会感谢你。
+    你也可以不保留我作为原作者的权利，自然没有任何问题，但似乎没有共享精神。
+-->
+ © Copyright by<a href="http://jasonlv.cn/" target="_blank">辣椒面儿</a> 2013-2014 using <a href="http://sae.sina.com.cn/" target="_blank">SAE</a> and <a href="http://flask.pocoo.com/" target="_blank">Flask</a> Design by GUOJING.
+
+<!--  -->
+ <div class="author">
+    <div class="icon">
+        <img src="http://svsr.sinaapp.com/static/main/img/me.png" alt="me"/>
+    </div>
+    <div class="name">
+        <a href="/">辣椒面儿</a>
+    </div>
+    <div class="description">
+        辣椒面儿的博客，关于设计，开发以及生活。
+    </div>
+</div>
+
+<!--  -->
+
+</div>
+
+</body>
+</html>
+

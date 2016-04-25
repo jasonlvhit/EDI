@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.jasonlv.siri" >
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Tests for siri"
+        android:targetPackage="cn.jasonlv.siri" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- begin: baidu speech sdk -->
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="S5WfXaUZrzblHr9AfMquKRn9" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="b07abb0e4c123b7f4b87a93ba3b0392b" />
+
+        <service
+            android:name="com.baidu.speech.VoiceRecognitionService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.baidu.voicerecognition.android.ui.BaiduASRDigitalDialog"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.baidu.action.RECOGNIZE_SPEECH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- end : baidu speech sdk -->
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Setting"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:label="设置"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.baidu.speech.asr.demo.setting" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".utility.TodoManager$AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.alarm.demo.action" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.TodoActivity"
+            android:label="@string/title_activity_todo" >
+        </activity>
+
+        <activity android:name=".image.BaseImageActivity"></activity>
+        <activity android:name=".image.SimpleImageActivity"
+            android:parentActivityName=".activity.MainActivity"
+            >
+
+
+        </activity>
+
+        <activity android:name=".activity.AboutActivity"
+            android:parentActivityName=".activity.MainActivity"
+            >
+
+        </activity>
+    </application>
+
+</manifest>
